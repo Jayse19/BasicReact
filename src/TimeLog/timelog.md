@@ -22,5 +22,5 @@ ___
 
 ## Problems:
  * I struggled for a little bit with the initial mui because I needed to run a ci to clear and install my node_modules along with installing additional packages
- * 
+ * Tabs wont work, can't change pages, box is in the way
 ___
