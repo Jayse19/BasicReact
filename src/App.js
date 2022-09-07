@@ -1,58 +1,57 @@
-import React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+
+import * as React from 'react';
 import './App.css';
-import ExampleItem from './components/ExampleItem';
 
 function App() {
-  const example = [
-    { title: 'here is an amazing title'}
-  ];
 	return (
-		<div>
-			<nav class="navbar background">
-				<ul class="nav-list">
-					<div class="logo">
-						<img src=
-"https://www.emilywrites.co.nz/wp-content/uploads/2018/08/Hire-Me-1024x493.png" />
-					</div>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#blogs">Blogs</a></li>
-				</ul>
-			</nav>
-
-			<section class="section">
-        <ExampleItem
-        title={example[0].title}></ExampleItem>
-				<div class="box-main">
-					<div class="firstHalf">
-						<h1 class="text-big">
-							Header one
-						</h1>
-						<p class="text-small">
-							Text below header
-						</p>
-					</div>
-				</div>
-			</section>
-			<section class="section">
-				<div class="box-main">
-					<div class="secondHalf">
-						<h1 class="text-big" id="program">
-							Another Header
-						</h1>
-						<p class="text-small">
-							another description
-						</p>
-					</div>
-				</div>
-			</section>
-			
-			<footer className="footer">
-				<p className="text-footer">
-					I made a footer
-				</p>
-			</footer>
-		</div>
+		<Box sx={{ flexGrow: 1}}>
+			<AppBar position="fixed">
+				<Toolbar>
+          			<IconButton
+            			size="large"
+            			edge="start"
+            			color="inherit"
+            			aria-label="menu"
+            			sx={{ mr: 2 }}
+          			>
+            			<MenuIcon />
+          			</IconButton>
+          			<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          			</Typography>
+          			<Button color="inherit">Button</Button>
+        		</Toolbar>
+			</AppBar>
+		</Box>
+        		<Card sx={{ maxWidth: 345 }}>
+				<CardActionArea>
+				  <CardMedia
+					component="img"
+					height="140"
+					image="/static/images/cards/contemplative-reptile.jpg"
+					alt="green iguana"
+				  />
+				  <CardContent>
+					<Typography gutterBottom variant="h5" component="div">
+					  Lizard
+					</Typography>
+					<Typography variant="body2" color="text.secondary">
+					  Lizards are a widespread group of squamate reptiles, with over 6,000
+					  species, ranging across all continents except Antarctica
+					</Typography>
+				  </CardContent>
+				</CardActionArea>
+			  </Card>
 	)
 }
 

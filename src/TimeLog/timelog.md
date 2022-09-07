@@ -11,9 +11,13 @@ ___
 ## Date:  *09/2/22-09/7/22*
 
 ## Time Spent:
+* Spent 2 hours watching the videos 
+* Spent 3 hours working with mui and getting my webpage to look "better"
 
 ## Goals: 
-* Use Mui
+* Use basic mui on my basic web page in order to get items to look better
+* Create cards in mui
+* Create a taskbar in mui
 
 ## Problems:
 
