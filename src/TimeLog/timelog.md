@@ -18,7 +18,9 @@ ___
 * Use basic mui on my basic web page in order to get items to look better
 * Create cards in mui
 * Create a taskbar in mui
+* Create Tabs/buttons on the task bar
 
 ## Problems:
-
+ * I struggled for a little bit with the initial mui because I needed to run a ci to clear and install my node_modules along with installing additional packages
+ * 
 ___
